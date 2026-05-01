@@ -415,52 +415,6 @@
   .fee-table td { padding: 0.85rem 0; font-size: 0.9rem; color: var(--text-mid); }
   .fee-table td:last-child { text-align: right; font-family: var(--sans); font-size: 1.1rem; color: var(--clay); font-weight: bold; }
 
-  /* ─── SERVICES CTA ───────────────────────── */
-  .services-cta {
-    background: var(--cream);
-    padding: 5rem 6rem;
-    text-align: center;
-  }
-  .services-cta h2 {
-    font-family: var(--serif);
-    font-size: clamp(1.6rem, 2.5vw, 2.2rem);
-    color: var(--bark);
-    margin-bottom: 0.75rem;
-    font-weight: bold;
-  }
-  .services-cta h2 em { color: var(--clay); font-style: italic; }
-  .services-cta p {
-    color: var(--text-mid);
-    font-size: 0.95rem;
-    max-width: 480px;
-    margin: 0 auto 2rem;
-    line-height: 1.8;
-  }
-  .btn-cta-large {
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    background: var(--bark);
-    color: var(--white);
-    font-family: var(--sans);
-    font-size: 0.85rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    font-weight: 400;
-    transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
-    box-shadow: 0 4px 20px rgba(45,96,92,0.2);
-  }
-  .btn-cta-large:hover {
-    background: var(--clay);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(45,96,92,0.3);
-  }
-  @media (max-width: 900px) {
-    .services-cta { padding: 3.5rem 1.5rem; }
-  }
-
   /* ─── THERAPISTS ──────────────────────────── */
   .therapists-hero {
     padding: 10rem 6rem 5rem;
@@ -1651,12 +1605,6 @@
       </table>
       <p style="font-size: 0.78rem; color: var(--text-light); margin-top: 1.5rem;">Reduced rates available on request. Sessions are paid in advance by bank transfer.</p>
     </div>
-  </section>
-
-  <section class="services-cta">
-    <h2>Ready to take the <em>first step</em>?</h2>
-    <p>Your free 30-minute consultation is a relaxed, no-obligation conversation. We'd love to hear from you.</p>
-    <button class="btn-cta-large" onclick="showPage('contact'); if(window.innerWidth <= 900){ setTimeout(function(){ document.getElementById('contact-form-wrap').scrollIntoView({behavior:'smooth'}); }, 50); }">Book a Free Consultation</button>
   </section>
 
   <footer>
