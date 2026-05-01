@@ -827,6 +827,9 @@
     .nav-logo-svg svg { height: 32px; }
   }
 
+  body.page-contact .nav-cta-desktop { visibility: hidden !important; }
+  body.page-contact .nav-mobile-cta { display: none !important; }
+
 </style>
 </head>
 <body>
@@ -2311,6 +2314,7 @@
     const link = document.querySelector(`[data-page="${name}"]`);
     if (link) link.classList.add('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.body.className = name === 'contact' ? 'page-contact' : '';
   }
 
   function toggleMenu() {
