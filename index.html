@@ -257,6 +257,53 @@
   }
   .section-title em { font-style: italic; color: var(--sage); }
 
+  /* ─── Testimonials ─────────────────────────── */
+  .home-testimonials {
+    background: var(--white);
+    padding: 6rem;
+    border-top: 1px solid var(--sage-pale);
+  }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .testimonial-card {
+    background: var(--cream);
+    padding: 2.5rem;
+    border-radius: 2px;
+    border-left: 3px solid var(--sage-light);
+    position: relative;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(45,96,92,0.08); }
+  .testimonial-card:nth-child(2) { border-color: var(--clay-light); }
+  .testimonial-card:nth-child(3) { border-color: var(--bark-light); }
+  .testimonial-card:nth-child(4) { border-color: var(--sage); }
+  .testimonial-quote-icon {
+    width: 24px; height: 18px;
+    color: var(--sage-light);
+    margin-bottom: 1.25rem;
+    display: block;
+    opacity: 0.6;
+  }
+  .testimonial-text {
+    font-size: 0.92rem;
+    color: var(--text-mid);
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 1.25rem;
+  }
+  .testimonial-author {
+    font-size: 0.78rem;
+    font-family: var(--sans);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--sage);
+    font-weight: bold;
+  }
+
   .home-pillars {
     background: var(--cream);
     padding: 6rem;
@@ -767,6 +814,9 @@
 
     .section { padding: 3.5rem 1.5rem; }
 
+    .home-testimonials { padding: 3.5rem 1.5rem; }
+    .testimonials-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+
     .home-pillars { padding: 3.5rem 1.5rem; }
     .pillars-grid { grid-template-columns: 1fr; gap: 1.25rem; }
 
@@ -1061,6 +1111,34 @@
       <div class="hero-float">
         <div class="hero-float-num">8+</div>
         <div class="hero-float-label">Years supporting mental wellbeing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="home-testimonials">
+    <p class="section-eyebrow">What clients say</p>
+    <h2 class="section-title">Real stories, <em>real</em> change</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <svg class="testimonial-quote-icon" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 2.4C10.4 3.6 7.6 6.4 7.2 10.4H12V24H0zm16 0V14.4C16 6.4 20.8 1.6 30.4 0L32 2.4C26.4 3.6 23.6 6.4 23.2 10.4H28V24H16z" fill="currentColor"/></svg>
+        <p class="testimonial-text">Ben took the time to explore various approaches that might assist me and suggested practical ways to adjust my perspective on self-worth. Some of the tools he taught me will stay with me for the rest of my life. I also find myself more emotionally available to my wife and children. I have mechanisms in place now that help me daily, and when things get tough, I recover quicker.</p>
+        <p class="testimonial-author">— Alistair</p>
+      </div>
+      <div class="testimonial-card">
+        <svg class="testimonial-quote-icon" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 2.4C10.4 3.6 7.6 6.4 7.2 10.4H12V24H0zm16 0V14.4C16 6.4 20.8 1.6 30.4 0L32 2.4C26.4 3.6 23.6 6.4 23.2 10.4H28V24H16z" fill="currentColor"/></svg>
+        <p class="testimonial-text">I had a great experience working with Ben through a really hard time in my life. He provided a safe space and thoughtful advice whilst making me feel seen and heard in our sessions.</p>
+        <p class="testimonial-author">— Louie</p>
+      </div>
+      <div class="testimonial-card">
+        <svg class="testimonial-quote-icon" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 2.4C10.4 3.6 7.6 6.4 7.2 10.4H12V24H0zm16 0V14.4C16 6.4 20.8 1.6 30.4 0L32 2.4C26.4 3.6 23.6 6.4 23.2 10.4H28V24H16z" fill="currentColor"/></svg>
+        <p class="testimonial-text">I found my therapy sessions so comforting and a safe space to share my deepest worries. I felt seen and heard and valued and this was most important for me. I would highly recommend Ben to anyone. He is a great guy who listens, gives coping mechanisms and guidance and most of all without judgement or prejudice.</p>
+        <p class="testimonial-author">— Lisa</p>
+      </div>
+      <div class="testimonial-card">
+        <svg class="testimonial-quote-icon" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 2.4C10.4 3.6 7.6 6.4 7.2 10.4H12V24H0zm16 0V14.4C16 6.4 20.8 1.6 30.4 0L32 2.4C26.4 3.6 23.6 6.4 23.2 10.4H28V24H16z" fill="currentColor"/></svg>
+        <p class="testimonial-text">I met Ben when I finally realised I was ready for therapy. In the beginning I found it difficult to open up about things and he was incredibly understanding and listened to all my weird stories until I was ready. Such a kind person and made me feel comfortable.</p>
+        <p class="testimonial-author">— Charlotte</p>
       </div>
     </div>
   </section>
